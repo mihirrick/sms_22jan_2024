@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/save" , (req,res)=>{
-    const url = "mongodb+srv://mihirbhanushali808:FcRj62uy7vmJykgL@cluster0.bvq41no.mongodb.net/?retryWrites=true&w=majority"
+    const url = "mongodb+srv://mihirbhanushali808:WvmoLVKGaZUwBAMn@cluster0.ejjrtdb.mongodb.net/?retryWrites=true&w=majority"
     const client = new MongoClient(url);
     const db = client.db("kc22jan24");
     const coll = db.collection("student");
@@ -18,7 +18,7 @@ app.post("/save" , (req,res)=>{
 } );
 
 app.get("/read" , (req,res)=>{
-    const url = "mongodb+srv://mihirbhanushali808:FcRj62uy7vmJykgL@cluster0.bvq41no.mongodb.net/?retryWrites=true&w=majority"
+    const url = "mongodb+srv://mihirbhanushali808:WvmoLVKGaZUwBAMn@cluster0.ejjrtdb.mongodb.net/?retryWrites=true&w=majority"
     const client = new MongoClient(url);
     const db = client.db("kc22jan24");
     const coll = db.collection("student");
@@ -27,7 +27,7 @@ app.get("/read" , (req,res)=>{
     .catch(error => res.send(error));
 } );
 app.delete("/remove" , (req,res)=>{
-    const url = "mongodb+srv://mihirbhanushali808:FcRj62uy7vmJykgL@cluster0.bvq41no.mongodb.net/?retryWrites=true&w=majority"
+    const url = "mongodb+srv://mihirbhanushali808:WvmoLVKGaZUwBAMn@cluster0.ejjrtdb.mongodb.net/?retryWrites=true&w=majority"
     const client = new MongoClient(url);
     const db = client.db("kc22jan24");
     const coll = db.collection("student");
@@ -38,7 +38,7 @@ app.delete("/remove" , (req,res)=>{
 } );
 
 app.put("/modify" , (req,res)=>{
-    const url = "mongodb+srv://mihirbhanushali808:FcRj62uy7vmJykgL@cluster0.bvq41no.mongodb.net/?retryWrites=true&w=majority"
+    const url = "mongodb+srv://mihirbhanushali808:WvmoLVKGaZUwBAMn@cluster0.ejjrtdb.mongodb.net/?retryWrites=true&w=majority"
     const client = new MongoClient(url);
     const db = client.db("kc22jan24");
     const coll = db.collection("student");
